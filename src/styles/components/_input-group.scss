@@ -1,0 +1,21 @@
+.input-group{
+    display: flex;
+    margin-bottom: $medium;
+
+    @media (max-width: $mobile-breakpoint) {
+        flex-direction: column;
+        margin-bottom: $regular;
+    }
+}
+
+.input-group__item{
+    margin-right: $small;
+    @media (max-width: $mobile-breakpoint) {
+        margin: 0 0 $small 0;
+        
+        .text-input, .select, .textarea{
+            width: 100%;
+        }
+    }
+}
+
